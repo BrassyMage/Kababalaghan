@@ -5,48 +5,33 @@ import Characters.Character;
 public class IbongAdarnaJr extends Character {
 
     public IbongAdarnaJr() {
-        super("Ibong Adarna Jr.", "The Melodramatic Bird", "Hero", 100, 10, 10);
-        this.origin = "Mount Makiling";
-        this.personality = "Dramatic, colorful, and sings to heal or annoy";
-
-        setS1("Feather Flick", 12, 0);
-        setS2("Healing Song", 20, 25);
-        setS3("Rainbow Sneezes", 35, 50);
-        setS4("Melodramatic Aria", 30, 40);
+        super("Ibong Adarna Jr.", "Hero", 100, 25);
     }
 
     @Override
     public void basicAttack(Character target) {
-        System.out.println(name + " flicks rainbow feathers!");
-        target.takeDamage(s1Damage + getAttack());
-        regenStamina();
+        if (spendStamina(10)) {
+            int damage = attack;
+            System.out.println(name + " sings softly!");
+            target.takeDamage(damage);
+        }
     }
 
     @Override
     public void specialSkill(Character target) {
-        if (spendStamina(s2StaminaCost)) {
-            System.out.println(name + " sings a healing melody!");
-            heal(20);
+        if (spendStamina(20)) {
+            int damage = attack + 15;
+            System.out.println(name + " sings a magical song!");
+            target.takeDamage(damage);
         }
     }
 
     @Override
     public void ultimateSkill(Character target) {
-        if (spendStamina(s3StaminaCost)) {
-            System.out.println(name + " sneezes rainbow colors everywhere!");
-            target.takeDamage(s3Damage + getAttack() + 5);
-            if (Math.random() > 0.5) {
-                target.stun(1);
-            }
-        }
-    }
-
-    @Override
-    public void signatureMove(Character target) {
-        if (spendStamina(s4StaminaCost)) {
-            System.out.println(name + " sings a DRAMATIC aria!");
-            target.takeDamage(s4Damage + getAttack() + 8);
-            heal(10);
+        if (spendStamina(30)) {
+            int damage = attack + 25;
+            System.out.println(name + " sings the legendary song!");
+            target.takeDamage(damage);
         }
     }
 }
