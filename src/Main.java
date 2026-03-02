@@ -14,10 +14,9 @@ public class Main {
         // WELCOME SCREEN
         // ========================================
         System.out.println("========================================");
-        System.out.println("  FILIPINO MYTHOLOGY: TURN-BASED RPG");
+        System.out.println("            KABABALAGHAN                ");
         System.out.println("========================================");
         System.out.println("Heroes vs Villains of Philippine Legend");
-        System.out.println("========================================");
 
         // ========================================
         // MAIN MENU
