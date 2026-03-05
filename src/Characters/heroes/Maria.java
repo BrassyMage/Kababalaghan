@@ -3,8 +3,8 @@ package Characters.heroes;
 import Characters.Character;
 
 public class Maria extends Character {
-    public class Maria(){
-        super("Maria Makiling's Cousin", "Hero", 135, 25);
+    public Maria(){
+        super("Maria Makiling's Cousin", "Hero", 135, 25, 10, 40);
     }
 
     @Override
@@ -26,7 +26,7 @@ public class Maria extends Character {
     }
 
     @Override
-    public void ultSkill(Character target){
+    public void ultimateSkill(Character target){
         if(spendStamina(35)) {
             int damage = attack * 3;
             System.out.println(name + "conjures a tornado!");

@@ -3,8 +3,8 @@ package Characters.villains;
 import Characters.Character;
 
 public class Duwende extends Character {
-    public class Duwende(){
-        super("Black Duwende", "Creature", 120, 30);
+    public Duwende(){
+        super("Black Duwende","Creature", 120, 30, 10, 230);
     }
 
     @Override
@@ -26,7 +26,7 @@ public class Duwende extends Character {
     }
 
     @Override
-    public void ultSkill(Character target){
+    public void ultimateSkill(Character target){
         if(spendStamina(26)) {
             int damage = attack * 3;
             System.out.println(name + "hits you with powerful poison!");

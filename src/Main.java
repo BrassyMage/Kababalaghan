@@ -1,15 +1,12 @@
-
-package Characters;
-
+import Characters.Character;
 import Characters.heroes.*;
 import Characters.villains.*;
 import java.util.*;
 
 public class Main {
-    static Scanner scanner = new Scanner(System.in);
-
 
      static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("======================");
         System.out.println("    KABABALAGHAN");
         System.out.println("======================");
@@ -47,7 +44,7 @@ public class Main {
         System.out.println("\n--- CHOOSE HERO ---");
 
         // Get all heroes dynamically
-        ArrayList<Character> heroes = getAllHeroes();
+        ArrayList<Characters.Character> heroes = getAllHeroes();
         for (int i = 0; i < heroes.size(); i++) {
             System.out.println((i+1) + ". " + heroes.get(i).getName());
         }
@@ -61,14 +58,14 @@ public class Main {
             return;
         }
 
-        Character player = heroes.get(heroChoice);
+        Characters.Character player = heroes.get(heroChoice);
         System.out.println("\nYou chose: " + player.getName());
 
         // RANDOM VILLAIN SELECTION
-        ArrayList<Character> villains = getAllVillains();
+        ArrayList<Characters.Character> villains = getAllVillains();
         Random rand = new Random();
         int randomIndex = rand.nextInt(villains.size());
-        Character villain = villains.get(randomIndex);
+        Characters.Character villain = villains.get(randomIndex);
 
         System.out.println("\n--- RANDOM ENCOUNTER ---");
         System.out.println("A " + villain.getName() + " appears!");
@@ -89,7 +86,7 @@ public class Main {
         scanner.nextLine();
     }
 
-    public static boolean fight(Scanner scanner, Character player, Character villain) {
+    public static boolean fight(Scanner scanner, Characters.Character player, Characters.Character villain) {
 
         while (player.isAlive() && villain.isAlive()) {
             // Player turn
@@ -144,31 +141,31 @@ public class Main {
 
     public static void viewCharacters() {
         System.out.println("\n--- HEROES ---");
-        ArrayList<Character> heroes = getAllHeroes();
-        for (Character hero : heroes) {
+        ArrayList<Characters.Character> heroes = getAllHeroes();
+        for (Characters.Character hero : heroes) {
             System.out.println("- " + hero.getName() + " (HP: " + hero.getMaxHp() + ", ATK: " + hero.getAttack() + ")");
         }
 
         System.out.println("\n--- VILLAINS ---");
-        ArrayList<Character> villains = getAllVillains();
-        for (Character villain : villains) {
+        ArrayList<Characters.Character> villains = getAllVillains();
+        for (Characters.Character villain : villains) {
             System.out.println("- " + villain.getName() + " (HP: " + villain.getMaxHp() + ", ATK: " + villain.getAttack() + ")");
         }
     }
 
-    public static ArrayList<Character> getAllHeroes() {
-        ArrayList<Character> heroes = new ArrayList<>();
+    public static ArrayList<Characters.Character> getAllHeroes() {
+        ArrayList<Characters.Character> heroes = new ArrayList<>();
             heroes.add(new JuanTamad());
             heroes.add(new IbongAdarnaJr());
             heroes.add(new LapuLapu());
-            heroes.add(new BaganiNgKape);
+            heroes.add(new BaganiNgKape());
             heroes.add(new Maria());
             Collections.shuffle(heroes);
         // Add more heroes here in the future
         return heroes;
     }
 
-    public static ArrayList<Character> getAllVillains() {
+    public static ArrayList<Characters.Character> getAllVillains() {
         ArrayList <Character> villains = new ArrayList<>();
             villains.add(new Aswang());
             villains.add(new Tiyanak());
