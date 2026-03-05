@@ -18,7 +18,7 @@ public class Diwata extends Character {
 
     @Override
     public void specialSkill(Character target){
-        if(spendStamina(11)) {
+        if(spendStamina(19)) {
             int damage = attack + 13;
             System.out.println(name + "shape shift into a jaguar and bites you!");
             target.takeDamage(damage);
@@ -27,10 +27,11 @@ public class Diwata extends Character {
 
     @Override
     public void ultSkill(Character target){
-        if(spendStamina(11)) {
+        if(spendStamina(30)) {
             int damage = attack * 3;
             System.out.println(name + "lifts 25 tons and throws it at you!");
             target.takeDamage(damage);
         }
     }
 }
+
