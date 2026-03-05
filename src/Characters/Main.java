@@ -161,6 +161,7 @@ public class Main {
             heroes.add(new JuanTamad());
             heroes.add(new IbongAdarnaJr());
             heroes.add(new LapuLapu());
+            heroes.add(new Maria());
             Collections.shuffle(heroes);
         // Add more heroes here in the future
         return heroes;
@@ -172,6 +173,8 @@ public class Main {
             villains.add(new Tiyanak());
             villains.add(new Manananggal());
             villains.add(new Bakunawa());
+            villains.add(new Duwende());
+            villains.add(new Diwata());
             Collections.shuffle(villains);
         // Add more villains here in the future
         return villains;
