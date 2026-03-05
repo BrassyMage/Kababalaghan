@@ -172,6 +172,7 @@ public class Main {
             villains.add(new Tiyanak());
             villains.add(new Manananggal());
             villains.add(new Bakunawa());
+            villains.add(new Santelmo());
             Collections.shuffle(villains);
         // Add more villains here in the future
         return villains;
