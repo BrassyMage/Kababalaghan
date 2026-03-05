@@ -1,13 +1,13 @@
-import Characters.Character;
+package Characters;
+
 import Characters.heroes.*;
 import Characters.villains.*;
 
 import java.util.*;
 
 public class Main {
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
+    static Random random = new Random(); {
 
         System.out.println("======================");
         System.out.println("    KABABALAGHAN");
@@ -117,9 +117,9 @@ public class Main {
                     System.out.println("Invalid action!");
             }
 
-            if (!villain.isAlive()) {
+           /* if (!villain.isAlive()) {
                 return true;
-            }
+            }*/
 
             // Villain turn
             if (villain.isAlive()) {
@@ -161,6 +161,7 @@ public class Main {
 
     public static ArrayList<Character> getAllHeroes() {
         ArrayList<Character> heroes = new ArrayList<>();
+        int randh = random.nextInt(heroes.size());
         heroes.add(new JuanTamad());
         heroes.add(new IbongAdarnaJr());
         heroes.add(new LapuLapu());
@@ -169,12 +170,16 @@ public class Main {
     }
 
     public static ArrayList<Character> getAllVillains() {
-        ArrayList<Character> villains = new ArrayList<>();
-        villains.add(new Aswang());
-        villains.add(new Tiyanak());
-        villains.add(new Manananggal());
-        villains.add(new Bakunawa());
+        ArrayList <Character> villains = new ArrayList<>();
+        int randv = random.nextInt(villains.size()) + 1;
+        switch (randv) {
+            case 1:villains.add(new Aswang());
+            case 2:villains.add(new Tiyanak());
+            case 3:villains.add(new Manananggal());
+            case 4:villains.add(new Bakunawa());
 
+            default:  villains.add(new Aswang());
+        }
         // Add more villains here in the future
         return villains;
     }

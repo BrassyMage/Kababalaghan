@@ -24,6 +24,7 @@ public class Bakunawa extends Character {
     @Override
     public void ultimateSkill(Character target) {
         int damage = attack + 30;
+
         System.out.println(name + " devours the moon!");
         target.takeDamage(damage);
     }

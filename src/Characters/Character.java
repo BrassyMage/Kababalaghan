@@ -1,5 +1,7 @@
 package Characters;
 
+import java.util.*;
+
 public abstract class Character {
     protected String name;
     protected String type;  // "Hero" or "Villain"
@@ -9,8 +11,8 @@ public abstract class Character {
     protected int maxStamina = 100;
     protected int attack;
     protected boolean isAlive = true;
-
-    public Character(String name, String type, int maxHp, int attack) {
+    Random random = new Random();
+    public Character(String name, String type, int maxHp, int attack, int stamina, int maxStamina) {
         this.name = name;
         this.type = type;
         this.maxHp = maxHp;
@@ -51,7 +53,6 @@ public abstract class Character {
 
     // Getters
     public String getName() { return name; }
-    public String getType() { return type; }
     public int getHp() { return hp; }
     public int getMaxHp() { return maxHp; }
     public int getStamina() { return stamina; }

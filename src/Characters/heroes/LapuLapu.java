@@ -2,15 +2,17 @@ package Characters.heroes;
 
 import Characters.Character;
 
+import java.util.*;
+
 public class LapuLapu extends Character {
     public LapuLapu() {
         super("Lapu Lapu 2.0", "Hero", 120, 21);
     }
-
+    Random random = new Random();
     @Override
     public void basicAttack(Character target) {
         if (spendStamina(12)) {
-            int damage = attack + 7;
+            int damage = random.nextInt(15) + 7;
             System.out.println(name + " swings his kampilan!");
             target.takeDamage(damage);
         }
