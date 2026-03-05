@@ -12,7 +12,7 @@ public class Main {
         System.out.println("======================");
         boolean running = true;
 
-        while (running) {
+        while(running) {
             System.out.println("\n--- MENU ---");
             System.out.println("1. Start Game");
             System.out.println("2. View Characters");

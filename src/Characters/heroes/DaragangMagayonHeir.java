@@ -1,4 +1,5 @@
 package Characters.heroes;
+
 import Characters.Character;
 
 public class DaragangMagayonHeir extends Character {
