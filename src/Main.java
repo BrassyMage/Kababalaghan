@@ -160,6 +160,8 @@ public class Main {
             heroes.add(new LapuLapu());
             heroes.add(new BaganiNgKape());
             heroes.add(new Maria());
+            heroes.add(new Tikoy());
+            heroes.add(new DaragangMagayonHeir());
             Collections.shuffle(heroes);
         // Add more heroes here in the future
         return heroes;
@@ -175,6 +177,7 @@ public class Main {
             villains.add(new Kapre());
             villains.add(new Duwende());
             villains.add(new Diwata());
+            villains.add(new Tikbalang());
             Collections.shuffle(villains);
         // Add more villains here in the future
         return villains;
