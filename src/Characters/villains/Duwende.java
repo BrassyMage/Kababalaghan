@@ -1,4 +1,4 @@
-package Characters.creatures;
+package Characters.villains;
 
 import Characters.Character;
 
@@ -33,4 +33,5 @@ public class Duwende extends Character {
             target.takeDamage(damage);
         }
     }
+
 }
