@@ -5,7 +5,7 @@ import Characters.Character;
 public class Tiyanak extends Character {
 
     public Tiyanak() {
-        super("Tiyanak", "Villain", 120, 22);
+        super("Tiyanak", "Villain", 120, 22,15,100);
     }
 
     @Override

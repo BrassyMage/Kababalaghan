@@ -5,7 +5,7 @@ import Characters.Character;
 public class JuanTamad extends Character {
 
     public JuanTamad() {
-        super("Juan Tamad", "Hero", 120, 20);
+        super("Juan Tamad", "Hero", 120, 20,15,100);
     }
 
     @Override

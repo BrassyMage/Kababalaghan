@@ -6,7 +6,7 @@ import java.util.*;
 
 public class LapuLapu extends Character {
     public LapuLapu() {
-        super("Lapu Lapu 2.0", "Hero", 120, 21);
+        super("Lapu Lapu 2.0", "Hero", 120, 21,15,100);
     }
     Random random = new Random();
     @Override

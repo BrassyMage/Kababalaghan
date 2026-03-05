@@ -4,7 +4,7 @@ import Characters.Character;
 
 public class Bakunawa extends Character {
         public Bakunawa() {
-            super("Bakunawa", "Villian", 210, 10);
+            super("Bakunawa", "Villian", 210, 10,15,100);
         }
 
     @Override

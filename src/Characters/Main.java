@@ -1,18 +1,18 @@
+
 package Characters;
 
 import Characters.heroes.*;
 import Characters.villains.*;
-
 import java.util.*;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);
-    static Random random = new Random(); {
 
+
+     static void main(String[] args) {
         System.out.println("======================");
         System.out.println("    KABABALAGHAN");
         System.out.println("======================");
-
         boolean running = true;
 
         while (running) {
@@ -117,9 +117,6 @@ public class Main {
                     System.out.println("Invalid action!");
             }
 
-           /* if (!villain.isAlive()) {
-                return true;
-            }*/
 
             // Villain turn
             if (villain.isAlive()) {
@@ -161,26 +158,21 @@ public class Main {
 
     public static ArrayList<Character> getAllHeroes() {
         ArrayList<Character> heroes = new ArrayList<>();
-        int randh = random.nextInt(heroes.size());
-        heroes.add(new JuanTamad());
-        heroes.add(new IbongAdarnaJr());
-        heroes.add(new LapuLapu());
-
+            heroes.add(new JuanTamad());
+            heroes.add(new IbongAdarnaJr());
+            heroes.add(new LapuLapu());
+            Collections.shuffle(heroes);
         // Add more heroes here in the future
         return heroes;
     }
 
     public static ArrayList<Character> getAllVillains() {
         ArrayList <Character> villains = new ArrayList<>();
-        int randv = random.nextInt(villains.size()) + 1;
-        switch (randv) {
-            case 1:villains.add(new Aswang());
-            case 2:villains.add(new Tiyanak());
-            case 3:villains.add(new Manananggal());
-            case 4:villains.add(new Bakunawa());
-
-            default:  villains.add(new Aswang());
-        }
+            villains.add(new Aswang());
+            villains.add(new Tiyanak());
+            villains.add(new Manananggal());
+            villains.add(new Bakunawa());
+            Collections.shuffle(villains);
         // Add more villains here in the future
         return villains;
     }
