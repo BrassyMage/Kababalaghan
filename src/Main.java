@@ -163,6 +163,7 @@ public class Main {
         ArrayList<Character> heroes = new ArrayList<>();
         heroes.add(new JuanTamad());
         heroes.add(new IbongAdarnaJr());
+        heroes.add(new LapuLapu());
         // Add more heroes here in the future
         return heroes;
     }
@@ -170,7 +171,10 @@ public class Main {
     public static ArrayList<Character> getAllVillains() {
         ArrayList<Character> villains = new ArrayList<>();
         villains.add(new Aswang());
-        villains.add(new Tiyanak());  // Tiyanak added here!
+        villains.add(new Tiyanak());
+        villains.add(new Manananggal());
+        villains.add(new Bakunawa());
+
         // Add more villains here in the future
         return villains;
     }
