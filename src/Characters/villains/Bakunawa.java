@@ -9,7 +9,7 @@ public class Bakunawa extends Character {
 
     @Override
     public void basicAttack(Character target) {
-        int damage = attack+3;
+        int damage = attack + 3;
         System.out.println(name + " lashes with tidal fury!");
         target.takeDamage(damage);
     }
@@ -29,5 +29,3 @@ public class Bakunawa extends Character {
         target.takeDamage(damage);
     }
 }
-
-
