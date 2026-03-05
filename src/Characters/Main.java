@@ -165,6 +165,7 @@ public class Main {
         heroes.add(new JuanTamad());
         heroes.add(new IbongAdarnaJr());
         heroes.add(new LapuLapu());
+
         // Add more heroes here in the future
         return heroes;
     }

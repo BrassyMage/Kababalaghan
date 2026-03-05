@@ -8,7 +8,7 @@ public abstract class Character {
     protected int hp;
     protected int maxHp;
     protected int stamina;
-    protected int maxStamina = 100;
+    protected int maxStamina;
     protected int attack;
     protected boolean isAlive = true;
     Random random = new Random();
@@ -18,7 +18,8 @@ public abstract class Character {
         this.maxHp = maxHp;
         this.hp = maxHp;
         this.attack = attack;
-        this.stamina = 50;
+        this.stamina = maxStamina;
+        this.maxStamina = maxStamina;
     }
 
     public abstract void basicAttack(Character target);
