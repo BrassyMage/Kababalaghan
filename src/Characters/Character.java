@@ -172,11 +172,11 @@ public abstract class Character {
 
     public static ArrayList<Character> getAllHeroes() {
         ArrayList<Character> heroes = new ArrayList<>();
-        heroes.add(new MariaMakiling());
-        heroes.add(new Apolaki());
-//        heroes.add(new Magwayen());
-        heroes.add(new Kaptan());
-        //to add more
+          heroes.add(new MariaMakiling());
+          heroes.add(new Apolaki());
+          heroes.add(new Magwayen());
+          heroes.add(new Kaptan());
+          //to add more
 
         Collections.shuffle(heroes);
         return heroes;
@@ -186,8 +186,8 @@ public abstract class Character {
         ArrayList<Character> villains = new ArrayList<>();
           villains.add(new Aswang());
           villains.add(new Mananananggal());
-//        villains.add(new Kapre());
-        villains.add(new Santelmo());
+          villains.add(new Kapre());
+          villains.add(new Santelmo());
         //to add more
 
         Collections.shuffle(villains);
