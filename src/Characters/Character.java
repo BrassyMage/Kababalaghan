@@ -175,7 +175,7 @@ public abstract class Character {
         heroes.add(new MariaMakiling());
         heroes.add(new Apolaki());
 //        heroes.add(new Magwayen());
-//        heroes.add(new Kaptan());
+        heroes.add(new Kaptan());
         //to add more
 
         Collections.shuffle(heroes);
