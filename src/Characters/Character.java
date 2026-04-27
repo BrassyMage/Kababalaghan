@@ -173,7 +173,7 @@ public abstract class Character {
     public static ArrayList<Character> getAllHeroes() {
         ArrayList<Character> heroes = new ArrayList<>();
         heroes.add(new MariaMakiling());
-//        heroes.add(new Apolaki());
+        heroes.add(new Apolaki());
 //        heroes.add(new Magwayen());
 //        heroes.add(new Kaptan());
         //to add more
@@ -185,7 +185,7 @@ public abstract class Character {
     public static ArrayList<Character> getAllVillains() {
         ArrayList<Character> villains = new ArrayList<>();
           villains.add(new Aswang());
-//        villains.add(new Mananananggal());
+          villains.add(new Mananananggal());
 //        villains.add(new Kapre());
 //        villains.add(new Santelmo());
         //to add more
