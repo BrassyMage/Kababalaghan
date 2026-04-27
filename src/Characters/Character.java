@@ -187,7 +187,7 @@ public abstract class Character {
           villains.add(new Aswang());
           villains.add(new Mananananggal());
 //        villains.add(new Kapre());
-//        villains.add(new Santelmo());
+        villains.add(new Santelmo());
         //to add more
 
         Collections.shuffle(villains);
