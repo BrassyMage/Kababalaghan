@@ -5,7 +5,7 @@ import Characters.Character;
 public class Tikbalang extends Character {
 
     public Tikbalang() {
-        super("Tikbalang", "Hero", 120, 30, 100, 100,
+        super("Tikbalang", "Villain", 120, 30, 100, 100,
                 "Hoof Stomp",
                 "Labyrinth of the Forest",
                 "Gingagayuma (Bewitched)");
